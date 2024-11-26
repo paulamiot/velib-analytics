@@ -1,0 +1,30 @@
+version: 2
+
+sources: 
+  - name: 'nom du data set au sein de dbt'
+    schema: 'nom du dataset dans bigquery'
+    tables: 
+      - name: ''
+        description: "Table1 contening blablabla"
+        columns:
+          - name: 'exemple date'
+            description: 'date de blabla'
+            tests: 
+              - not_null:
+              - unique: 
+      - name: 'Table2 contening blabla'
+        description: "Table1 contening blablabla"
+        columns:
+          - name: 'exemple date'
+            description: 'date de blabla'
+            tests: 
+              - not_null:
+              - unique: 
+      - name: 'Table3 contening blabla'
+        description: "Table1 contening blablabla"
+        columns:
+          - name: 'exemple date'
+            description: 'date de blabla'
+            tests: 
+              - not_null:
+              - unique: 

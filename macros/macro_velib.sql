@@ -1,0 +1,1 @@
+#ici on peut créer des macros (voir la doc)
