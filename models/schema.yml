@@ -17,4 +17,23 @@ sources:
           - name: Arrival_Latitude
           - name: Arrival_Longitude
           - name: Length
+    tables:     
+      - name: comptable_piste_cycl
+        columns:
+          - name: Identifiant du compteur
+          - name: Nom du compteur
+          - name: Identifiant du site de comptage
+          - name: Nom du site de comptage
+          - name: Comptage horaire
+          - name: Date et heure de comptage
+          - name: Date d'installation du site de comptage
+          - name: Lien vers photo du site de comptage
+          - name: Coordonnées géographiques
+          - name: Identifiant technique compteur
+          - name: ID Photos
+          - name: test_lien_vers_photos_du_site_de_comptage_
+          - name: id_photo_1
+          - name: url_sites
+          - name: type_dimage
+          - name: mois_annee_comptage
 
