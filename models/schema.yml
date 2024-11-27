@@ -18,7 +18,23 @@ sources:
           - name: Arrival_Longitude
           - name: Length
           - name: Duration 
-      
+
+      - name: stations
+        columns:
+          - name: id_station
+          - name: nom_station
+          - name: en_fonctionnement
+          - name: capacite_station
+          - name: bornes_paiement_dispo
+          - name: nom_commune
+          - name: code_postal
+          - name: nb_stations_a_350m
+          - name: nb_stations_a_500m
+          - name: nb_stations_a_800m
+          - name: IDs_stations_a_350m
+          - name: IDs_stations_a_500m
+          - name: IDs_stations_a_800m
+          - name: coordonnees_geos
 
   - name: pistes cyclables
     schema: VA_clean
