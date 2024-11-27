@@ -1,0 +1,36 @@
+sources:
+  - name: donnees_juin
+    schema: VA_raw_data
+    tables:
+      - name: donnes_velib_juin
+        columns:
+          - name: Bike
+          - name: Departure_Station
+          - name: Departure_Station_Name
+          - name: Departure_Time
+          - name: Departure_Latitude
+          - name: Departure_Longitude
+          - name: Electric
+          - name: Arrival_Station
+          - name: Arrival_Station_Name
+          - name: Arrival_Time
+          - name: Arrival_Latitude
+          - name: Arrival_Longitude
+          - name: Length
+          - name: Duration 
+      
+
+  - name: pistes cyclables
+    schema: VA_clean
+    tables:  
+      - name: comptage_pistes_cyclables
+        columns:
+          - name: id_compteur
+          - name: horodatage_comptage
+          - name: mois_annee_comptage
+          - name: nom_du_compteur
+          - name: coordonnees_geo
+          - name: nb_comptage
+          - name: date_heure_comptage
+          - name: date_installation_compteur
+        
