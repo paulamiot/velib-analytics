@@ -19,6 +19,20 @@ sources:
           - name: Length
           - name: Duration 
 
+      - name: station_arrondissement
+        columns:
+          - name: station_id
+          - name: station_nom
+          - name: station_status
+          - name: station_capacity
+          - name: station_geoloc
+          - name: commune_nom
+          - name: latitude
+          - name: longitude
+          - name: surface
+          - name: zip_code
+          - name: commune_arrondissement
+
       - name: stations
         columns:
           - name: id_station
