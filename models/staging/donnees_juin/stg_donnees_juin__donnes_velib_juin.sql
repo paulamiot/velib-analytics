@@ -58,7 +58,8 @@ SELECT
         arrival_time,
         arrival_latitude,
         arrival_longitude,
-        formatted_duration, 
+        formatted_duration,
+        length, 
         EXTRACT (MINUTE from formatted_duration) AS duration_minute
     from final
 )
