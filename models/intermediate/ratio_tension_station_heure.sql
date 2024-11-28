@@ -17,7 +17,8 @@ uid_depart AS (
     hour,
     CONCAT(station_id,hour) AS unique_id_heure,
     nb_depart_cumule,
-    nb_depart_moyen
+    nb_depart_moyen,
+    zip_code
   FROM {{ ref('depart_station_heure_arrondissement') }}
 )
 SELECT 
@@ -31,6 +32,7 @@ SELECT
     station_capacite,
     (nb_velo_elec + nb_velo_meca) AS nb_velo_dispo,
     nb_depart_moyen,
+    zip_code,
     ROUND ((1 - (SAFE_DIVIDE(nb_depart_moyen, (nb_velo_elec + nb_velo_meca)))),2)AS ratio_tension
 FROM uid_etats 
 LEFT JOIN uid_depart
