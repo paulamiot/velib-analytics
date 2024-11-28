@@ -1,0 +1,4 @@
+SELECT*
+FROM {{ ref('ratio_type_velo') }} as rtv
+JOIN {{ ref('stg_donnees_juin__station_arrondissement') }}as sdjsa
+ON rtv.station_id = sdjsa.station_id
