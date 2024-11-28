@@ -5,6 +5,7 @@ sources:
       - name: donnes_velib_juin
       - name: station_arrondissement
       - name: stations
+      - name : etats_stations_par_heure
 
   - name: pistes cyclables
     schema: VA_clean
