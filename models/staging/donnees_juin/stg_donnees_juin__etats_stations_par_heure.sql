@@ -12,6 +12,7 @@ renamed as (
         datetime_log,
         date_jour,
         date_heure,
+        EXTRACT(HOUR FROM date_heure) AS heure, 
         duedate,
         station_id,
         station_nom,
