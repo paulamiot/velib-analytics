@@ -32,6 +32,7 @@ SELECT
     station_capacite,
     (nb_velo_elec + nb_velo_meca) AS nb_velo_dispo,
     nb_depart_moyen,
+    nb_depart_cumule,
     zip_code,
     ROUND ((1 - (SAFE_DIVIDE(nb_depart_moyen, (nb_velo_elec + nb_velo_meca)))),2)AS ratio_tension
 FROM uid_etats 
