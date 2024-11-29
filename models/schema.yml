@@ -6,6 +6,8 @@ sources:
       - name: station_arrondissement
       - name: stations
       - name : etats_stations_par_heure
+      - name: analyse_horaire_station_arrondissement
+      - name: info_arrondissement_2
 
   - name: pistes cyclables
     schema: VA_clean
