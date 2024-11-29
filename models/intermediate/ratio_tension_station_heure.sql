@@ -8,14 +8,14 @@ WITH uid_etats AS (
     station_capacite,
     nb_velo_elec,
     nb_velo_meca,
-    CONCAT(station_id,heure) AS unique_id_heure
+    CONCAT(station_id,"-",heure) AS unique_id_heure
   FROM {{ ref('stg_donnees_juin__etats_stations_par_heure') }}
   ),
 uid_depart AS (
   SELECT
     station_id,
     hour,
-    CONCAT(station_id,hour) AS unique_id_heure,
+    CONCAT(station_id,"-", hour) AS unique_id_heure,
     nb_depart_cumule,
     nb_depart_moyen,
     zip_code
