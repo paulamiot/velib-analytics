@@ -2,7 +2,7 @@ WITH sub1 AS (
 
     SELECT
         a.*,
-        CONCAT(station_id, heure) AS cle_unique, 
+        CONCAT(station_id,"-", heure) AS cle_unique, 
     FROM {{ ref("stg_donnees_juin__etats_stations_par_heure_v2") }} as a
 )
 
