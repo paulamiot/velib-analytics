@@ -10,7 +10,10 @@ renamed as (
 
     select
         commune_arrondissement,
-        zip_code,
+        CASE 
+            WHEN commune_arrondissement = "Pantin" THEN 93055
+            ELSE zip_code
+        END AS zip_code,
         nb_stations_arr,
         nbre_bornettes_arr,
         longitude_arr,
