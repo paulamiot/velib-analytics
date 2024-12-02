@@ -3,7 +3,7 @@ SELECT
     a.station_depart_nom,
     b.zip_code,
     b.commune_arrondissement,
-    a.hour,
+    a.depart_hour,
     a.nb_depart AS nb_depart_cumule,
     ROUND ((a.nb_depart / 60),2) AS nb_depart_moyen,
     b.station_capacity,

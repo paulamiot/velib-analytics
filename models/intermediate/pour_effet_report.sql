@@ -14,7 +14,7 @@ SELECT
     nb_stations_arr,
     nbre_bornettes_arr,
     commune_arrondissement,
-    ratio_category
+    ratio_category_depart
 FROM sub1
 LEFT JOIN {{ ref("station_ratio_horaire_arrondissement") }} as b
     USING (cle_unique)
